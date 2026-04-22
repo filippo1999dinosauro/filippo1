@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ecdd" />
+  <title>Carta — Cal Soci · Sant Antoni, Barcelona</title>
+  <meta name="description" content="Carta de Cal Soci: para picar, de la brasa, del mar, arroces, postres y bodega. Cocina mediterránea con raíces menorquinas en Sant Antoni." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f3ecdd'/><text x='50%25' y='60%25' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%231f1a14'>C</text><circle cx='24' cy='8' r='2' fill='%23a14a2a'/></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="nav__brand">Cal Soci<span class="dot">.</span></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="index.html#identitat">Casa</a>
+        <a href="index.html#destacados">Mesa</a>
+        <a href="index.html#experiencia">Momentos</a>
+        <a href="menu.html" aria-current="page">Carta</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <a href="index.html#contacto" class="btn nav__cta">
+        Reservar
+        <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__top">
+      <span class="nav__brand">Cal Soci<span class="dot">.</span></span>
+      <button class="drawer__close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="drawer__nav" aria-label="Móvil">
+      <a href="index.html#identitat">Casa</a>
+      <a href="index.html#destacados">Mesa</a>
+      <a href="index.html#experiencia">Momentos</a>
+      <a href="menu.html">Carta</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="drawer__meta">
+      <span>C. de Viladomat, 27 · Sant Antoni</span>
+      <a href="tel:+34930298912">930 29 89 12</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- MENU HERO -->
+    <section class="menu-hero">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker">— La carta</span>
+          <h1 class="display" style="margin-top:20px;">Carta<br/><em style="font-style:italic; color:var(--terracotta);">de casa.</em></h1>
+        </div>
+        <p class="lede reveal delay-1">
+          La carta cambia con el mercado y con lo que el día nos trae. Lo que sigue es una muestra orientativa — para la carta real, pregúntanos al llegar o mira la pizarra.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORY TABS -->
+    <nav class="menu-tabs" aria-label="Secciones">
+      <div class="menu-tabs__inner">
+        <a href="#picar">Per picar</a>
+        <a href="#brasa">De la brasa</a>
+        <a href="#mar">Del mar</a>
+        <a href="#arrossos">Arrossos</a>
+        <a href="#carnes">Carns</a>
+        <a href="#postres">Postres</a>
+        <a href="#bodega">Vermuts &amp; vins</a>
+      </div>
+    </nav>
+
+    <!--
+      CONTENT NOTES
+      - No real menu/prices were provided. Items below represent a coherent
+        Sant Antoni taberna selection with light Menorcan accents.
+      - Prices are realistic for Barcelona 2024 neighborhood tabernas but
+        must be validated with the owner before any live publication.
+      - Replace every item with the real carta when provided.
+    -->
+
+    <!-- Per picar -->
+    <section class="menu-section" id="picar">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 01 · Per picar</span>
+            <h2 class="h1" style="margin-top:14px;">Para empezar.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Olives de casa</h3>
+            <span class="menu-item__price">4,50 €</span>
+            <p class="menu-item__desc">Aliñadas en casa, con piel de naranja y hierbas.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Pa amb tomàquet<span class="menu-item__tag">clàssic</span></h3>
+            <span class="menu-item__price">3,80 €</span>
+            <p class="menu-item__desc">Pan de cristal, tomate maduro, sal, aceite de oliva virgen.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Anxoves del Cantàbric</h3>
+            <span class="menu-item__price">13,50 €</span>
+            <p class="menu-item__desc">Anchoas en aceite, mantequilla y pan tostado.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Croquetes de l'àvia</h3>
+            <span class="menu-item__price">8,90 €</span>
+            <p class="menu-item__desc">Cinco unidades. Bechamel lenta, crujiente fino.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Bravas Cal Soci<span class="menu-item__tag">de la casa</span></h3>
+            <span class="menu-item__price">7,50 €</span>
+            <p class="menu-item__desc">Patata confitada y frita, salsa brava y alioli suave.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Truita de patata</h3>
+            <span class="menu-item__price">9,50 €</span>
+            <p class="menu-item__desc">Jugosa, cebolla pochada. Media o entera.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Formatge de Maó amb confitura</h3>
+            <span class="menu-item__price">10,50 €</span>
+            <p class="menu-item__desc">Queso menorquín semicurado, confitura de tomate casera.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Sobrassada amb mel</h3>
+            <span class="menu-item__price">9,80 €</span>
+            <p class="menu-item__desc">Sobrasada menorquina templada, miel de romero, pan tostado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- De la brasa -->
+    <section class="menu-section" id="brasa">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 02 · De la brasa</span>
+            <h2 class="h1" style="margin-top:14px;">Fuego lento.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Escalivada amb anxova</h3>
+            <span class="menu-item__price">11,50 €</span>
+            <p class="menu-item__desc">Pimiento y berenjena a la brasa, anchoa, aceite nuevo.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Carxofes a la brasa</h3>
+            <span class="menu-item__price">12,50 €</span>
+            <p class="menu-item__desc">Alcachofas de temporada, sal en escamas, romesco.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Espàrrecs verds</h3>
+            <span class="menu-item__price">10,80 €</span>
+            <p class="menu-item__desc">Con yema curada y almendra tostada.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Porro a la brasa amb romesco</h3>
+            <span class="menu-item__price">9,80 €</span>
+            <p class="menu-item__desc">Puerro tierno, romesco de casa, avellana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Del mar -->
+    <section class="menu-section" id="mar">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 03 · Del mar</span>
+            <h2 class="h1" style="margin-top:14px;">Lo que trae la costa.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:620px;">
+            Pescado y marisco según mercado diario. Preguntar al camarero por lo fresco del día.
+          </p>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Gamba vermella a la planxa</h3>
+            <span class="menu-item__price">s/m</span>
+            <p class="menu-item__desc">Gamba roja, sal de Ibiza, aceite de oliva.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Seitons marinats</h3>
+            <span class="menu-item__price">9,50 €</span>
+            <p class="menu-item__desc">Boquerones en vinagre de Jerez, ajo y perejil.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Calamar a la planxa</h3>
+            <span class="menu-item__price">18,50 €</span>
+            <p class="menu-item__desc">Calamar de costa, su tinta, pan de cristal.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Caldereta menorquina<span class="menu-item__tag">per dos</span></h3>
+            <span class="menu-item__price">42,00 €</span>
+            <p class="menu-item__desc">Guiso de pescado de roca y crustáceos. Para dos personas, pedir al llegar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arrossos -->
+    <section class="menu-section" id="arrossos">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 04 · Arrossos</span>
+            <h2 class="h1" style="margin-top:14px;">Arroces, con tiempo.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:620px;">
+            Cocinados al momento. Mínimo dos personas, unos 30 minutos.
+          </p>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Arròs de la senyoreta</h3>
+            <span class="menu-item__price">22,00 € / p</span>
+            <p class="menu-item__desc">Pescado limpio, sepia, gamba pelada. El de mojar pan.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Arròs negre amb allioli</h3>
+            <span class="menu-item__price">21,00 € / p</span>
+            <p class="menu-item__desc">Arroz en tinta de sepia, alioli suave aparte.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Fideuà del port</h3>
+            <span class="menu-item__price">20,00 € / p</span>
+            <p class="menu-item__desc">Fideo tostado, sofrito largo, pescado del día.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carns -->
+    <section class="menu-section" id="carnes">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 05 · Carns</span>
+            <h2 class="h1" style="margin-top:14px;">Carnes breves.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Botifarra amb mongetes</h3>
+            <span class="menu-item__price">14,50 €</span>
+            <p class="menu-item__desc">Butifarra del Penedès a la brasa, judías de Santa Pau.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Steak tartar clàssic</h3>
+            <span class="menu-item__price">18,80 €</span>
+            <p class="menu-item__desc">Solomillo cortado a cuchillo, yema curada, tostadas.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Entrecot de vaca vella</h3>
+            <span class="menu-item__price">26,00 €</span>
+            <p class="menu-item__desc">Madurado, a la brasa, sal gruesa, patata al horno.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Costella de porc, cocció lenta</h3>
+            <span class="menu-item__price">17,50 €</span>
+            <p class="menu-item__desc">Costilla de cerdo, glaseado de la casa, ensalada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Postres -->
+    <section class="menu-section" id="postres">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 06 · Postres</span>
+            <h2 class="h1" style="margin-top:14px;">Para acabar.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Crema catalana</h3>
+            <span class="menu-item__price">6,00 €</span>
+            <p class="menu-item__desc">Receta de siempre, caramelo al momento.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Mel i mató<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">6,50 €</span>
+            <p class="menu-item__desc">Requesón fresco, miel, nueces.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Flam de la casa</h3>
+            <span class="menu-item__price">5,80 €</span>
+            <p class="menu-item__desc">Hecho en casa, nata ligera, caramelo oscuro.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Xocolata, oli i sal</h3>
+            <span class="menu-item__price">7,50 €</span>
+            <p class="menu-item__desc">Ganache oscura, aceite de arbequina, sal en escamas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bodega -->
+    <section class="menu-section" id="bodega">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 07 · Vermuts &amp; vins</span>
+            <h2 class="h1" style="margin-top:14px;">De beber.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:620px;">
+            Bodega corta, pensada. Bebemos pequeñas bodegas catalanas y baleares. Pregunta sin miedo.
+          </p>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Vermut de la casa</h3>
+            <span class="menu-item__price">3,80 €</span>
+            <p class="menu-item__desc">Rojo, con soda, piel de naranja y aceituna.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Caña de cervesa artesana</h3>
+            <span class="menu-item__price">3,50 €</span>
+            <p class="menu-item__desc">Pregunta la del día.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Copa de vi blanc</h3>
+            <span class="menu-item__price">desde 3,80 €</span>
+            <p class="menu-item__desc">Xarel·lo, macabeu, garnacha blanca.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Copa de vi negre</h3>
+            <span class="menu-item__price">desde 4,20 €</span>
+            <p class="menu-item__desc">Sumoll, cariñena, garnacha peluda.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Cava brut nature</h3>
+            <span class="menu-item__price">desde 4,50 €</span>
+            <p class="menu-item__desc">Pequeños productores del Penedès.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Gin-tònic de la casa</h3>
+            <span class="menu-item__price">9,00 €</span>
+            <p class="menu-item__desc">Ginebra catalana, tónica premium, piel de limón.</p>
+          </article>
+        </div>
+
+        <p class="menu-note">
+          La carta cambia con el mercado. Hay platos que entran y salen con la temporada, y otros —las bravas, el pan con tomate, el vermut— que no se van nunca. Para alergias o intolerancias, avisa al llegar y adaptamos. Precios con IVA incluido.
+        </p>
+      </div>
+    </section>
+
+    <!-- Back to reservation -->
+    <section class="section" style="background:var(--cream); border-top:1px solid var(--line);">
+      <div class="wrap" style="text-align:center;">
+        <span class="kicker reveal">— Mesa guardada</span>
+        <h2 class="h1 reveal delay-1" style="margin-top:16px; max-width:720px; margin-left:auto; margin-right:auto;">
+          ¿Vienes a probar?
+        </h2>
+        <p class="lede reveal delay-2" style="max-width:520px; margin:22px auto 34px;">
+          Las mesas buenas se cogen. Déjanos una nota o llámanos, y te guardamos sitio.
+        </p>
+        <div class="reveal delay-3" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="index.html#contacto" class="btn">
+            Reservar mesa
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+          </a>
+          <a href="tel:+34930298912" class="btn btn--ghost">Llamar 930 29 89 12</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="display" aria-hidden="true">Cal&nbsp;Soci<span style="color:var(--terracotta);">.</span></div>
+          <p>Taberna de barrio. Sant Antoni, Barcelona.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Visítanos</h4>
+          <p>C. de Viladomat, 27<br/>08015 Barcelona</p>
+          <p style="margin-top:10px;"><a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">Abrir en mapas ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p><a href="tel:+34930298912">930 29 89 12</a></p>
+          <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Ir a</h4>
+          <p><a href="index.html">Inicio</a></p>
+          <p><a href="index.html#contacto">Reservar</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Cal Soci · Sant Antoni</span>
+        <span>Diseñado con cariño · concepto web</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ecdd" />
+  <title>Cal Soci — Taberna de barrio · Sant Antoni, Barcelona</title>
+  <meta name="description" content="Cal Soci. Cocina mediterránea con raíces menorquinas, vermut, vinos y sobremesa en el corazón de Sant Antoni. C. de Viladomat 27, Barcelona." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cal Soci — Taberna de barrio en Sant Antoni" />
+  <meta property="og:description" content="Cocina honesta, vermut, y la calma de una taberna de barrio. C. de Viladomat 27, Barcelona." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f3ecdd'/><text x='50%25' y='60%25' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%231f1a14'>C</text><circle cx='24' cy='8' r='2' fill='%23a14a2a'/></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Cal Soci — Inicio">Cal Soci<span class="dot">.</span></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#identitat">Casa</a>
+        <a href="#destacados">Mesa</a>
+        <a href="#experiencia">Momentos</a>
+        <a href="menu.html">Carta</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn nav__cta">
+        Reservar
+        <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__top">
+      <span class="nav__brand">Cal Soci<span class="dot">.</span></span>
+      <button class="drawer__close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="drawer__nav" aria-label="Móvil">
+      <a href="#identitat">Casa</a>
+      <a href="#destacados">Mesa</a>
+      <a href="#experiencia">Momentos</a>
+      <a href="menu.html">Carta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="drawer__meta">
+      <span>C. de Viladomat, 27 · Sant Antoni</span>
+      <a href="tel:+34930298912">930 29 89 12</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <div class="hero__eyebrow reveal">
+              <span class="rule"></span>
+              <span class="kicker">Sant Antoni · Barcelona · des de sempre</span>
+            </div>
+
+            <h1 class="display hero__title reveal">
+              <span class="row">Taberna</span>
+              <span class="row shift">de <em>barrio.</em></span>
+            </h1>
+
+            <div class="hero__meta">
+              <p class="lede reveal delay-1">
+                Cocina mediterránea con raíces menorquinas, vermut de casa y vinos de los que piden sobremesa. Una esquina honesta en Viladomat, hecha para volver.
+              </p>
+              <div class="reveal delay-2">
+                <p class="body-sm" style="letter-spacing:0.16em; text-transform:uppercase; margin-bottom:10px; color:var(--muted);">Cocina abierta</p>
+                <!-- Hours intentionally not hardcoded; confirm with owner. -->
+                <p class="body-lg">Consulta horarios y disponibilidad<br/>al <a class="link-underline" style="border-bottom-color:var(--line);" href="tel:+34930298912">930 29 89 12</a></p>
+              </div>
+            </div>
+
+            <div class="hero__cta reveal delay-3">
+              <a href="#contacto" class="btn">
+                Reservar mesa
+                <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+              </a>
+              <a href="menu.html" class="btn btn--ghost">Ver carta</a>
+            </div>
+          </div>
+
+          <figure class="hero__figure reveal delay-2">
+            <!-- Placeholder image. Replace with real Cal Soci hero shot. -->
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+              alt="Atmósfera cálida de taberna con mesas de madera y luz baja"
+              loading="eager" fetchpriority="high"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Cal Soci'}))"
+            />
+            <figcaption>Viladomat 27 · La casa</figcaption>
+          </figure>
+        </div>
+
+        <div class="hero__ticker reveal">
+          <span>Cocina de producto</span>
+          <span>Vermut de casa</span>
+          <span>Vinos naturales</span>
+          <span>Para compartir</span>
+          <span>Sobremesa larga</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- IDENTITY / STORY -->
+    <section class="section" id="identitat">
+      <div class="wrap story">
+        <div class="story__label reveal">
+          <span class="kicker">— La casa</span>
+        </div>
+        <div class="reveal delay-1">
+          <h2 class="h1 story__title">Un lloc de barri,<br/>obert a qui pasa.</h2>
+        </div>
+        <div class="story__body reveal delay-2">
+          <p class="body-lg">
+            Cal Soci es la esquina tranquila de Sant Antoni donde las cosas se hacen sin prisa: el vermut se pide despacio, el pan se corta grueso, y las mesas se juntan si hace falta. Llevamos la tradición catalana en la base y un recuerdo menorquín en los detalles, aunque lo primero es siempre el producto del día.
+          </p>
+          <p class="body-lg">
+            Cocinamos lo que nos gusta comer: cosas honestas, bien hechas, pensadas para compartir. Unas bravas que salen crujientes, un arroz que se espera, un vino que se queda. Nada de artificios. Lo demás lo pone la gente que entra por la puerta.
+          </p>
+
+          <blockquote class="pullquote">
+            El mejor ingrediente es el rato que se queda la gente.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS (menu teaser) -->
+    <!--
+      NOTE: No real menu/photos were provided. These categories reflect a
+      typical Sant Antoni taberna and are marked visually as a "selección".
+      Replace with real dishes, prices and photography when available.
+    -->
+    <section class="section highlights" id="destacados">
+      <div class="wrap">
+        <div class="highlights__head">
+          <div class="reveal">
+            <span class="kicker">— La mesa</span>
+            <h2 class="h1" style="margin-top:18px;">Una selección<br/>de la carta.</h2>
+          </div>
+          <div class="reveal delay-1">
+            <p class="body-lg" style="max-width:460px;">
+              Lo que sale cada día depende del mercado, pero hay cosas que nunca faltan: algo para mojar, algo del mar, algo de la brasa. La carta entera vive en la pizarra y en la página de siempre.
+            </p>
+            <p style="margin-top:22px;">
+              <a class="link-underline" href="menu.html">Carta completa
+                <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="highlights__grid">
+          <article class="dish reveal">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80" alt="Vermut con soda y naranja" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Vermut'}))"/>
+            </figure>
+            <span class="dish__cat">Para empezar</span>
+            <h3 class="dish__name">Vermut de la casa</h3>
+            <p class="dish__note">Servido frío, con soda, piel de naranja y una aceituna de las buenas.</p>
+          </article>
+
+          <article class="dish reveal delay-1">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=800&q=80" alt="Pan con tomate" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Pa amb tomàquet'}))"/>
+            </figure>
+            <span class="dish__cat">La tradición</span>
+            <h3 class="dish__name">Pa amb tomàquet</h3>
+            <p class="dish__note">Pan de cristal, tomate maduro, sal y aceite. Tal y como debe ser.</p>
+          </article>
+
+          <article class="dish reveal delay-2">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1625944525533-473f1b3d9684?auto=format&fit=crop&w=800&q=80" alt="Plato para compartir en la brasa" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'De la brasa'}))"/>
+            </figure>
+            <span class="dish__cat">Del fuego</span>
+            <h3 class="dish__name">De la brasa, para compartir</h3>
+            <p class="dish__note">Lo que el mercado trae: verdura, pescado de costa, carnes breves.</p>
+          </article>
+
+          <article class="dish reveal delay-3">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Copa de vino" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Vinos'}))"/>
+            </figure>
+            <span class="dish__cat">Bodega</span>
+            <h3 class="dish__name">Vinos con alma</h3>
+            <p class="dish__note">Pequeñas bodegas catalanas y baleares. Preguntar sin miedo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experiencia">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker">— Momentos</span>
+          <h2 class="h1" style="margin-top:18px; max-width:780px;">
+            Cal Soci se llena<br/>de muchas maneras.
+          </h2>
+          <p class="lede" style="margin-top:18px; max-width:680px;">
+            Hay un momento para cada mesa y una mesa para cada gente. Así es como se vive la casa.
+          </p>
+        </div>
+
+        <div class="experience__grid">
+          <div class="moment reveal">
+            <div class="moment__num">01</div>
+            <div>
+              <h3 class="moment__title">El vermut de siempre</h3>
+              <p class="moment__body">A mediodía, cuando la barra todavía no se ha llenado, y una copa fría con olivas se convierte en una hora entera.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-1">
+            <div class="moment__num">02</div>
+            <div>
+              <h3 class="moment__title">Cenas para compartir</h3>
+              <p class="moment__body">Platos al centro, pan en la mesa, vino que acompaña. Grupos pequeños, parejas, vecinos que se suman.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-2">
+            <div class="moment__num">03</div>
+            <div>
+              <h3 class="moment__title">Sobremesa sin reloj</h3>
+              <p class="moment__body">Cuando la cena acaba y nadie tiene prisa por irse. La segunda botella, el café largo, la conversación que se alarga.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-3">
+            <div class="moment__num">04</div>
+            <div>
+              <h3 class="moment__title">La cita tranquila</h3>
+              <p class="moment__body">Luz baja, mesa al fondo, menos ruido del que parece desde la calle. Un plan que siempre funciona.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / atmosphere -->
+    <section class="section gallery" id="galeria">
+      <div class="wrap">
+        <div class="gallery__head">
+          <div class="reveal">
+            <span class="kicker">— La casa por dentro</span>
+            <h2 class="h1" style="margin-top:18px;">Textura,<br/>cocina, gente.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:420px; color:rgba(250,245,234,.78);">
+            Fragmentos de días cualquiera. Lo mejor pasa entre platos.
+          </p>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__item tall reveal">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Interior de taberna de barrio" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Interior'}))"/>
+          </div>
+          <div class="gallery__item wide reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80" alt="Mesa con platos para compartir" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Mesa'}))"/>
+          </div>
+          <div class="gallery__item reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=700&q=80" alt="Detalle de plato" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Plato'}))"/>
+          </div>
+          <div class="gallery__item reveal delay-3">
+            <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=700&q=80" alt="Barra con copas" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Barra'}))"/>
+          </div>
+          <div class="gallery__item wide reveal">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Plato mediterráneo" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Cocina'}))"/>
+          </div>
+          <div class="gallery__item reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80" alt="Copa de vino" loading="lazy"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Vino'}))"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION / CONTACT -->
+    <section class="section" id="contacto">
+      <div class="wrap reserve__grid">
+        <div class="reveal">
+          <span class="kicker">— Reservas & Contacto</span>
+          <h2 class="h1" style="margin-top:18px;">Guardamos<br/>mesa.</h2>
+          <p class="lede" style="margin-top:22px; max-width:520px;">
+            Para reservar, llámanos o déjanos una nota. Confirmamos disponibilidad por teléfono o WhatsApp durante el mismo día.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-list__label">Dónde</span>
+              <span class="info-list__value">
+                <a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">
+                  C. de Viladomat, 27<br/>08015 Barcelona
+                </a>
+              </span>
+            </li>
+            <li>
+              <span class="info-list__label">Teléfono</span>
+              <span class="info-list__value"><a href="tel:+34930298912">930 29 89 12</a></span>
+            </li>
+            <li>
+              <span class="info-list__label">Barrio</span>
+              <span class="info-list__value">Sant Antoni · a un paso del Mercat</span>
+            </li>
+            <li>
+              <span class="info-list__label">Instagram</span>
+              <!-- Handle not confirmed — link to Instagram root as safe fallback. -->
+              <span class="info-list__value"><a href="https://www.instagram.com/" target="_blank" rel="noopener">@calsoci</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="reserve-form reveal delay-1" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Gracias. Te llamamos para confirmar.';">
+          <h3>Solicitar reserva</h3>
+          <p class="body-sm">Rellena tus datos y te confirmamos por teléfono.</p>
+
+          <div class="form-row two">
+            <div class="field">
+              <label for="r-name">Nombre</label>
+              <input id="r-name" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="field">
+              <label for="r-phone">Teléfono</label>
+              <input id="r-phone" type="tel" placeholder="+34…" required />
+            </div>
+          </div>
+
+          <div class="form-row two">
+            <div class="field">
+              <label for="r-date">Fecha</label>
+              <input id="r-date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="r-guests">Comensales</label>
+              <select id="r-guests" required>
+                <option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="r-time">Momento</label>
+              <select id="r-time" required>
+                <option value="">Vermut · comida · cena</option>
+                <option>Vermut (mediodía)</option>
+                <option>Comida</option>
+                <option>Tarde</option>
+                <option>Cena</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="r-note">Nota (opcional)</label>
+              <textarea id="r-note" placeholder="Alergias, celebración, mesa al fondo…"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">
+            Enviar solicitud
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+          <p class="form-note">* Demo · la solicitud aún no se envía a ningún sistema.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="display" aria-hidden="true">Cal&nbsp;Soci<span style="color:var(--terracotta);">.</span></div>
+          <p>Taberna de barrio. Sant Antoni, Barcelona.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Visítanos</h4>
+          <p>C. de Viladomat, 27<br/>08015 Barcelona</p>
+          <p style="margin-top:10px;"><a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">Abrir en mapas ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p><a href="tel:+34930298912">930 29 89 12</a></p>
+          <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Carta</h4>
+          <p><a href="menu.html">Ver carta</a></p>
+          <p><a href="#contacto">Reservar</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Cal Soci · Sant Antoni</span>
+        <span>Diseñado con cariño · concepto web</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
