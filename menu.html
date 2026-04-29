@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ecdd" />
+  <title>Carta — Cal Soci · Taverna menorquina, Sant Antoni</title>
+  <meta name="description" content="Carta de Cal Soci. Cocina de Menorca en Barcelona: bacalao con sobrasada y miel, mandonguilles amb sípia, trinxat amb cuixot, quesos de la isla, pomada y Xoriguer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f3ecdd'/><text x='50%25' y='60%25' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%231f1a14'>C</text><circle cx='24' cy='8' r='2' fill='%23a14a2a'/></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="nav__brand">Cal Soci<span class="dot">.</span></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="index.html#identitat">La taverna</a>
+        <a href="index.html#destacados">La mesa</a>
+        <a href="index.html#experiencia">La nit</a>
+        <a href="menu.html" aria-current="page">Carta</a>
+        <a href="index.html#contacto">Reservar</a>
+      </nav>
+      <a href="index.html#contacto" class="btn nav__cta">
+        Reservar
+        <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__top">
+      <span class="nav__brand">Cal Soci<span class="dot">.</span></span>
+      <button class="drawer__close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="drawer__nav" aria-label="Móvil">
+      <a href="index.html#identitat">La taverna</a>
+      <a href="index.html#destacados">La mesa</a>
+      <a href="index.html#experiencia">La nit</a>
+      <a href="menu.html">Carta</a>
+      <a href="index.html#contacto">Reservar</a>
+    </nav>
+    <div class="drawer__meta">
+      <span>C. de Viladomat, 27 · Sant Antoni</span>
+      <a href="tel:+34930298912">930 29 89 12</a>
+      <a href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">@cal.soci</a>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- MENU HERO -->
+    <section class="menu-hero">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker" style="color:var(--terracotta);">Cal Soci · Social Club</span>
+          <h1 class="display" style="margin-top:14px;">Cuina<br/><em style="font-style:italic; color:var(--terracotta);">de l'illa.</em></h1>
+        </div>
+        <p class="lede reveal delay-1">
+          Cocinamos lo que se come en Menorca, con producto que viene de allá. La carta cambia con la temporada y con lo que llega — esto es una selección representativa. Por unos 25 € se puede cenar bien.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORY TABS -->
+    <nav class="menu-tabs" aria-label="Secciones">
+      <div class="menu-tabs__inner">
+        <a href="#picar">Per picar</a>
+        <a href="#formatges">Formatges &amp; embotits</a>
+        <a href="#calents">Plats calents</a>
+        <a href="#carns">Carns</a>
+        <a href="#mar">Del mar</a>
+        <a href="#postres">Postres</a>
+        <a href="#beure">De beure</a>
+      </div>
+    </nav>
+
+    <!--
+      CONTENT NOTES
+      - Items below come from press research on Cal Soci (Time Out Barcelona,
+        Menorca Info, Local Love Barcelona, Sluurpy, Tripadvisor).
+      - The dishes named are real — confirmed signatures of the house.
+      - PRICES are realistic Sant Antoni 2024 ranges, not the actual prices
+        from Cal Soci (none were published). Owner must validate before live.
+      - Ask owner to send the real PDF/printed carta to drop in here verbatim.
+    -->
+
+    <!-- Per picar -->
+    <section class="menu-section" id="picar">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 01 · Per picar</span>
+            <h2 class="h1" style="margin-top:14px;">Para empezar.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Olives de la casa</h3>
+            <span class="menu-item__price">4,50 €</span>
+            <p class="menu-item__desc">Aliñadas en casa, con hinojo de Punta Nati y piel de naranja.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Pa amb tomàquet</h3>
+            <span class="menu-item__price">3,80 €</span>
+            <p class="menu-item__desc">Pan tostado, tomate maduro, sal y aceite.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Patates braves</h3>
+            <span class="menu-item__price">7,50 €</span>
+            <p class="menu-item__desc">Crujientes por fuera, salsa brava de la casa, alioli.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Ensalada vegana<span class="menu-item__tag">vegan</span></h3>
+            <span class="menu-item__price">10,50 €</span>
+            <p class="menu-item__desc">Verdura de mercado, semillas, vinagreta de cítricos.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Tàperes silvestres amb anxova</h3>
+            <span class="menu-item__price">8,80 €</span>
+            <p class="menu-item__desc">Alcaparras silvestres de Menorca, anchoa del Cantábrico, pan tostado.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Sobrassada amb bolets silvestres</h3>
+            <span class="menu-item__price">11,50 €</span>
+            <p class="menu-item__desc">Sobrasada menorquina templada con setas de temporada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formatges -->
+    <section class="menu-section" id="formatges">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 02 · Formatges &amp; embotits</span>
+            <h2 class="h1" style="margin-top:14px;">De la isla.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:620px;">
+            Quesos menorquines en distintos puntos de curación y embutidos isleños — lo que mejor cuenta de dónde venimos.
+          </p>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Tabla de formatges de Menorca<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">16,50 €</span>
+            <p class="menu-item__desc">Tierno, semicurado y curado de Maó, con confitura de tomate.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Embotits de l'illa</h3>
+            <span class="menu-item__price">14,50 €</span>
+            <p class="menu-item__desc">Sobrasada, cuixot (butifarra negra menorquina), camot.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Surtida mixta</h3>
+            <span class="menu-item__price">19,50 €</span>
+            <p class="menu-item__desc">Quesos y embutidos de Menorca para compartir.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Formatge curat amb mel</h3>
+            <span class="menu-item__price">9,80 €</span>
+            <p class="menu-item__desc">Queso de Maó curado, miel, nueces.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plats calents -->
+    <section class="menu-section" id="calents">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 03 · Plats calents</span>
+            <h2 class="h1" style="margin-top:14px;">Cocina de cuchara.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Bacallà amb sobrassada i mel<span class="menu-item__tag">de la casa</span></h3>
+            <span class="menu-item__price">15,50 €</span>
+            <p class="menu-item__desc">Bacalao confitado, sobrasada menorquina y un toque de miel. El plato que más recordáis.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Trinxat amb cuixot</h3>
+            <span class="menu-item__price">12,80 €</span>
+            <p class="menu-item__desc">Verdura tierna salteada con cuixot menorquín — la butifarra negra de la isla.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Pilotes amb tomàquet</h3>
+            <span class="menu-item__price">12,50 €</span>
+            <p class="menu-item__desc">Albóndigas en salsa de tomate lenta, pan para mojar.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Mandonguilles amb sípia</h3>
+            <span class="menu-item__price">14,80 €</span>
+            <p class="menu-item__desc">Mar y montaña a la menorquina: albóndigas y sepia.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Arròs del cap de setmana<span class="menu-item__tag">vie–sáb</span></h3>
+            <span class="menu-item__price">19,50 € / p</span>
+            <p class="menu-item__desc">El arroz que toque ese fin de semana. Pregunta al pedir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carns -->
+    <section class="menu-section" id="carns">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 04 · Carns</span>
+            <h2 class="h1" style="margin-top:14px;">Carnes.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Costelles laquades</h3>
+            <span class="menu-item__price">16,50 €</span>
+            <p class="menu-item__desc">Costillas glaseadas a la cocción lenta, salsa de la casa. Muy comentadas.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Meloso de ternera</h3>
+            <span class="menu-item__price">17,80 €</span>
+            <p class="menu-item__desc">Ternera cocinada despacio hasta que se deshace, jugo reducido.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Porc de la temporada</h3>
+            <span class="menu-item__price">15,50 €</span>
+            <p class="menu-item__desc">Plato de cerdo según temporada. Tradición de la matanza menorquina.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Del mar -->
+    <section class="menu-section" id="mar">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 05 · Del mar</span>
+            <h2 class="h1" style="margin-top:14px;">Del mar Balear.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Musclos amb mantega i sàlvia</h3>
+            <span class="menu-item__price">11,80 €</span>
+            <p class="menu-item__desc">Mejillones abiertos al momento, mantequilla noisette y salvia.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Sípia a la planxa</h3>
+            <span class="menu-item__price">14,50 €</span>
+            <p class="menu-item__desc">Sepia a la plancha, ajo, perejil, aceite de oliva.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Calamars amb seques<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">15,80 €</span>
+            <p class="menu-item__desc">Calamares con guisantes secos, receta tradicional menorquina.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Anxoves amb pa cruixent</h3>
+            <span class="menu-item__price">13,50 €</span>
+            <p class="menu-item__desc">Anchoas, mantequilla y pan tostado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Postres -->
+    <section class="menu-section" id="postres">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 06 · Postres</span>
+            <h2 class="h1" style="margin-top:14px;">Para acabar.</h2>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Greixonera<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">6,50 €</span>
+            <p class="menu-item__desc">Postre tradicional menorquín, hecho con ensaimada. De casa.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Crema cremada</h3>
+            <span class="menu-item__price">5,80 €</span>
+            <p class="menu-item__desc">La de siempre. Caramelo al momento.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Formatge amb confitura</h3>
+            <span class="menu-item__price">7,50 €</span>
+            <p class="menu-item__desc">Queso de Maó curado, confitura de tomate, almendras.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Licor de figues de moro</h3>
+            <span class="menu-item__price">4,50 €</span>
+            <p class="menu-item__desc">Licor casero de higos chumbos. Para cerrar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beure -->
+    <section class="menu-section" id="beure">
+      <div class="wrap">
+        <div class="menu-section__head">
+          <div class="reveal">
+            <span class="kicker">— 07 · De beure</span>
+            <h2 class="h1" style="margin-top:14px;">Lo que hay en la barra.</h2>
+          </div>
+          <p class="body-lg reveal delay-1" style="max-width:620px;">
+            Cerveza de barril buena, vinos pequeños, gin Xoriguer y la pomada que tantos pidieron al volver.
+          </p>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Pomada<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">6,50 €</span>
+            <p class="menu-item__desc">Gin Xoriguer y limonada. El trago de la isla. Largo y frío.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Gin Xoriguer<span class="menu-item__tag">menorquí</span></h3>
+            <span class="menu-item__price">6,00 €</span>
+            <p class="menu-item__desc">Solo, con tónica o como manda el cuerpo.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Caña de barril</h3>
+            <span class="menu-item__price">3,50 €</span>
+            <p class="menu-item__desc">Bien tirada, fresca, justa.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Copa de vi blanc</h3>
+            <span class="menu-item__price">desde 3,80 €</span>
+            <p class="menu-item__desc">Pequeñas bodegas catalanas y baleares.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Copa de vi negre</h3>
+            <span class="menu-item__price">desde 4,20 €</span>
+            <p class="menu-item__desc">Pregunta al equipo.</p>
+          </article>
+
+          <article class="menu-item reveal">
+            <h3 class="menu-item__name">Vermut de cap de setmana<span class="menu-item__tag">vie–sáb</span></h3>
+            <span class="menu-item__price">3,80 €</span>
+            <p class="menu-item__desc">Servido con olivas y piel de naranja.</p>
+          </article>
+        </div>
+
+        <p class="menu-note">
+          La carta cambia con lo que la isla nos manda. Lunes a viernes de 19 a 02:30, sábado de 12:30 a 03:00, domingo de 12:30 a 17:00. Cocina abierta hasta tarde. Para alergias o intolerancias, decirlo al llegar y lo adaptamos. Precios con IVA incluido.
+        </p>
+      </div>
+    </section>
+
+    <!-- Back to reservation -->
+    <section class="section" style="background:var(--cream); border-top:1px solid var(--line);">
+      <div class="wrap" style="text-align:center;">
+        <span class="kicker reveal">— Mesa guardada</span>
+        <h2 class="h1 reveal delay-1" style="margin-top:16px; max-width:720px; margin-left:auto; margin-right:auto;">
+          ¿Vienes a probar Menorca?
+        </h2>
+        <p class="lede reveal delay-2" style="max-width:520px; margin:22px auto 34px;">
+          Las mesas buenas se cogen. Llámanos o escríbenos por Instagram, y te guardamos sitio.
+        </p>
+        <div class="reveal delay-3" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="index.html#contacto" class="btn">
+            Reservar mesa
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+          </a>
+          <a href="tel:+34930298912" class="btn btn--ghost">Llamar 930 29 89 12</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="display" aria-hidden="true">Cal&nbsp;Soci<span style="color:var(--terracotta);">.</span></div>
+          <p>Taverna menorquina. Sant Antoni, Barcelona.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Visítanos</h4>
+          <p>C. de Viladomat, 27<br/>08015 Barcelona</p>
+          <p style="margin-top:10px;"><a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">Abrir en mapas ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p><a href="tel:+34930298912">930 29 89 12</a></p>
+          <p><a href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">@cal.soci ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Horario</h4>
+          <p>Lun–Vie · 19–02:30<br/>Sáb · 12:30–03:00<br/>Dom · 12:30–17:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Cal Soci · Sant Antoni</span>
+        <span>De Ciutadella, amb amor.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

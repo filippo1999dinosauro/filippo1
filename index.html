@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ecdd" />
+  <title>Cal Soci — Taverna menorquina · Sant Antoni, Barcelona</title>
+  <meta name="description" content="Cal Soci. La taverna menorquina de Barcelona, en Sant Antoni. De Lucho y Miqui, ciutadellencs. Cocina de Menorca, sin prisa, hasta tarde." />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Cal Soci — Taverna menorquina en Sant Antoni" />
+  <meta property="og:description" content="La taverna menorquina de Barcelona. C. de Viladomat 27, Sant Antoni." />
+  <meta property="og:locale" content="es_ES" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f3ecdd'/><text x='50%25' y='60%25' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%231f1a14'>C</text><circle cx='24' cy='8' r='2' fill='%23a14a2a'/></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Cal Soci — Inicio">Cal Soci<span class="dot">.</span></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#identitat">La taverna</a>
+        <a href="#destacados">La mesa</a>
+        <a href="#experiencia">La nit</a>
+        <a href="menu.html">Carta</a>
+        <a href="#contacto">Reservar</a>
+      </nav>
+      <a href="#contacto" class="btn nav__cta">
+        Reservar
+        <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__top">
+      <span class="nav__brand">Cal Soci<span class="dot">.</span></span>
+      <button class="drawer__close" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="drawer__nav" aria-label="Móvil">
+      <a href="#identitat">La taverna</a>
+      <a href="#destacados">La mesa</a>
+      <a href="#experiencia">La nit</a>
+      <a href="menu.html">Carta</a>
+      <a href="#contacto">Reservar</a>
+    </nav>
+    <div class="drawer__meta">
+      <span>C. de Viladomat, 27 · Sant Antoni</span>
+      <a href="tel:+34930298912">930 29 89 12</a>
+      <a href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">@cal.soci</a>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <div class="hero__eyebrow reveal">
+              <span class="rule"></span>
+              <span class="kicker">Sant Antoni · Barcelona · cuina de Menorca</span>
+            </div>
+
+            <h1 class="display hero__title reveal">
+              <span class="row">Taverna</span>
+              <span class="row shift"><em>menorquina.</em></span>
+            </h1>
+            <p class="kicker reveal delay-1" style="margin-top:18px; color:var(--terracotta);">Cal Soci · Social Club</p>
+
+            <div class="hero__meta">
+              <p class="lede reveal delay-1">
+                La taverna menorquina de Barcelona, en una esquina de Sant Antoni. Lucho y Miqui, de Ciutadella, cocinan la isla como en casa: producto, tradición, y la calma de los bares de toda la vida.
+              </p>
+              <div class="reveal delay-2">
+                <p class="kicker" style="margin-bottom:10px;">Horario</p>
+                <p class="body-lg" style="line-height:1.5;">
+                  Lun–Vie · 19:00 – 02:30<br/>
+                  Sábado · 12:30 – 03:00<br/>
+                  Domingo · 12:30 – 17:00
+                </p>
+              </div>
+            </div>
+
+            <div class="hero__cta reveal delay-3">
+              <a href="#contacto" class="btn">
+                Reservar mesa
+                <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+              </a>
+              <a href="menu.html" class="btn btn--ghost">Ver carta</a>
+            </div>
+          </div>
+
+          <figure class="hero__figure reveal delay-2">
+            <!-- Placeholder image (Cal Soci photos not provided as assets).
+                 Pick a candid interior shot of Cal Soci to replace this. -->
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+              alt="Atmósfera nocturna de taverna con luz cálida"
+              loading="eager" fetchpriority="high"
+              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Cal Soci'}))"
+            />
+            <figcaption>Viladomat 27 · La casa</figcaption>
+          </figure>
+        </div>
+
+        <div class="hero__ticker reveal">
+          <span>Cuina de Menorca</span>
+          <span>Tarda i nit</span>
+          <span>Producte d'illa</span>
+          <span>Per compartir</span>
+          <span>Sense pressa</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- IDENTITY / STORY -->
+    <section class="section" id="identitat">
+      <div class="wrap story">
+        <div class="story__label reveal">
+          <span class="kicker">— La taverna</span>
+        </div>
+        <div class="reveal delay-1">
+          <h2 class="h1 story__title">De Ciutadella<br/>a Sant Antoni.</h2>
+        </div>
+        <div class="story__body reveal delay-2">
+          <p class="body-lg">
+            Cal Soci nace de la amistad de Lucho y Miqui, dos ciutadellencs que vinieron a Barcelona a estudiar y se quedaron a abrir taberna. Miqui aprendió en cocinas de estrella, Lucho hizo la sala en algunos de los buenos. Después del confinamiento decidieron hacer lo único que les faltaba: contar Menorca como en Menorca.
+          </p>
+          <p class="body-lg">
+            La carta es lo que cocinan en casa, pero hecho con cuidado: producto de la isla, recetas de toda la vida, y la libertad de un bar que no quiere ser otra cosa que un buen bar. Las puertas se abren cuando otras se cierran, los platos se comparten, y la noche se alarga lo que haga falta.
+          </p>
+
+          <blockquote class="pullquote">
+            Más que un club, y más que un bar. Un paréntesis a la prisa.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS (real signature dishes from press research) -->
+    <!--
+      Highlights below are real dishes mentioned in press coverage of Cal Soci
+      (Time Out Barcelona, Menorca Info, Local Love Barcelona). Photos are
+      placeholders matched by category — replace with real photography.
+    -->
+    <section class="section highlights" id="destacados">
+      <div class="wrap">
+        <div class="highlights__head">
+          <div class="reveal">
+            <span class="kicker">— La mesa</span>
+            <h2 class="h1" style="margin-top:18px;">Cocina<br/>de la illa.</h2>
+          </div>
+          <div class="reveal delay-1">
+            <p class="body-lg" style="max-width:460px;">
+              Producto menorquín y manos finas. Cosas para compartir, sin pretensión, con tiempo para hablar entre plato y plato. La carta cambia con lo que llega de la isla.
+            </p>
+            <p style="margin-top:22px;">
+              <a class="link-underline" href="menu.html">Carta completa
+                <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="highlights__grid">
+          <article class="dish reveal">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1625944525533-473f1b3d9684?auto=format&fit=crop&w=800&q=80" alt="Bacalao con sobrasada y miel" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Bacallà'}))"/>
+            </figure>
+            <span class="dish__cat">Plato de casa</span>
+            <h3 class="dish__name">Bacallà amb sobrassada i mel</h3>
+            <p class="dish__note">El plato del que hablan las reseñas. Bacalao, sobrasada menorquina y miel. Equilibrio puro.</p>
+          </article>
+
+          <article class="dish reveal delay-1">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80" alt="Mandonguilles con sepia y tomate" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Pilotes'}))"/>
+            </figure>
+            <span class="dish__cat">Tradición</span>
+            <h3 class="dish__name">Mandonguilles amb sípia</h3>
+            <p class="dish__note">Albóndigas y sepia, mar y tierra. Receta de siempre, hecha despacio.</p>
+          </article>
+
+          <article class="dish reveal delay-2">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=800&q=80" alt="Trinxat con cuixot menorquín" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Trinxat'}))"/>
+            </figure>
+            <span class="dish__cat">De l'illa</span>
+            <h3 class="dish__name">Trinxat amb cuixot</h3>
+            <p class="dish__note">Verdura de invierno y cuixot menorquín, una butifarra negra de la isla.</p>
+          </article>
+
+          <article class="dish reveal delay-3">
+            <figure class="dish__figure">
+              <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=800&q=80" alt="Pomada menorquina" loading="lazy"
+                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Pomada'}))"/>
+            </figure>
+            <span class="dish__cat">Beguda</span>
+            <h3 class="dish__name">Pomada</h3>
+            <p class="dish__note">El trago menorquín por excelencia: gin Xoriguer y limonada. Frío, largo, isla.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experiencia">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker">— La nit</span>
+          <h2 class="h1" style="margin-top:18px; max-width:780px;">
+            Abrimos cuando<br/>otros cierran.
+          </h2>
+          <p class="lede" style="margin-top:18px; max-width:680px;">
+            Hecho a la manera de los bares de los pescadores de Ciutadella, donde se cena tarde y la sobremesa no tiene reloj.
+          </p>
+        </div>
+
+        <div class="experience__grid">
+          <div class="moment reveal">
+            <div class="moment__num">01</div>
+            <div>
+              <h3 class="moment__title">Cenar tarde, en serio</h3>
+              <p class="moment__body">Cocina abierta hasta pasada la medianoche, todos los días que abrimos. La hora a la que muchos sitios cierran, aquí es buena hora.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-1">
+            <div class="moment__num">02</div>
+            <div>
+              <h3 class="moment__title">Mesa para compartir</h3>
+              <p class="moment__body">Tablas de quesos y embutidos de Menorca, platos al centro, una cerveza buena. Para venir con gente, sin grandes planes.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-2">
+            <div class="moment__num">03</div>
+            <div>
+              <h3 class="moment__title">Mediodía de fin de semana</h3>
+              <p class="moment__body">Sábado a partir de las 12:30 y domingo de 12:30 a 17:00. Pomada fría, olivas, platos para no levantarse. Tradición de isla.</p>
+            </div>
+          </div>
+
+          <div class="moment reveal delay-3">
+            <div class="moment__num">04</div>
+            <div>
+              <h3 class="moment__title">La cita sin agobios</h3>
+              <p class="moment__body">Luz cálida, mesas de madera, conversación posible. Y un licor de higos de moros para acabar bien.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM FEED — real Cal Soci posts via Instagram's official embed widget -->
+    <section class="section ig-feed" id="instagram">
+      <div class="wrap">
+        <div class="ig-feed__head">
+          <div class="reveal">
+            <span class="kicker">— La casa por dentro</span>
+            <h2 class="h1" style="margin-top:18px;">Lo último<br/>en <em style="color:var(--terracotta); font-style:italic;">@cal.soci</em></h2>
+          </div>
+          <div class="reveal delay-1" style="max-width:480px;">
+            <p class="body-lg">
+              La cocina, la sala, la noche. Lo que pasa cada semana, contado por nosotros mismos.
+            </p>
+            <p style="margin-top:18px;">
+              <a class="link-underline" href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">
+                Seguir @cal.soci en Instagram
+                <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="ig-grid reveal">
+          <!-- Posts curated from @cal.soci's public feed.
+               Instagram's embed widget loads the real photos client-side. -->
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DEqNdTsMZOm/" data-instgrm-version="14"></blockquote>
+          </div>
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DCgdr2doQ1H/" data-instgrm-version="14"></blockquote>
+          </div>
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C4vnGKkI9TE/" data-instgrm-version="14"></blockquote>
+          </div>
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C17fOZhIc_b/" data-instgrm-version="14"></blockquote>
+          </div>
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Csq-0unJb1d/" data-instgrm-version="14"></blockquote>
+          </div>
+          <div class="ig-card">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CjGf9_Nji0D/" data-instgrm-version="14"></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RESERVATION / CONTACT -->
+    <section class="section" id="contacto">
+      <div class="wrap reserve__grid">
+        <div class="reveal">
+          <span class="kicker">— Reservas & Contacto</span>
+          <h2 class="h1" style="margin-top:18px;">Guardamos<br/>mesa.</h2>
+          <p class="lede" style="margin-top:22px; max-width:520px;">
+            Llámanos o envíanos un mensaje por Instagram. Confirmamos disponibilidad por teléfono o WhatsApp el mismo día.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-list__label">Dónde</span>
+              <span class="info-list__value">
+                <a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">
+                  C. de Viladomat, 27<br/>08015 Barcelona
+                </a>
+              </span>
+            </li>
+            <li>
+              <span class="info-list__label">Teléfono</span>
+              <span class="info-list__value"><a href="tel:+34930298912">930 29 89 12</a></span>
+            </li>
+            <li>
+              <span class="info-list__label">Horario</span>
+              <span class="info-list__value">Lun–Vie 19:00–02:30<br/>Sáb 12:30–03:00<br/>Dom 12:30–17:00</span>
+            </li>
+            <li>
+              <span class="info-list__label">Metro</span>
+              <span class="info-list__value">Poble Sec · L3</span>
+            </li>
+            <li>
+              <span class="info-list__label">Instagram</span>
+              <span class="info-list__value"><a href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">@cal.soci</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="reserve-form reveal delay-1" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Gracias. Te llamamos para confirmar.';">
+          <h3>Solicitar reserva</h3>
+          <p class="body-sm">Rellena tus datos y te confirmamos por teléfono o WhatsApp.</p>
+
+          <div class="form-row two">
+            <div class="field">
+              <label for="r-name">Nombre</label>
+              <input id="r-name" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="field">
+              <label for="r-phone">Teléfono</label>
+              <input id="r-phone" type="tel" placeholder="+34…" required />
+            </div>
+          </div>
+
+          <div class="form-row two">
+            <div class="field">
+              <label for="r-date">Fecha</label>
+              <input id="r-date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="r-guests">Comensales</label>
+              <select id="r-guests" required>
+                <option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="r-time">Franja</label>
+              <select id="r-time" required>
+                <option value="">Cena · sobremesa</option>
+                <option>Cena temprano (19:00–21:00)</option>
+                <option>Cena (21:00–23:30)</option>
+                <option>Cena tarde (23:30–cierre)</option>
+                <option>Vermut (vie/sáb · tarde)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="r-note">Nota (opcional)</label>
+              <textarea id="r-note" placeholder="Alergias, preferencias, mesa al fondo…"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">
+            Enviar solicitud
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.2"/></svg>
+          </button>
+          <p class="form-note">* Demo · la solicitud aún no se envía a ningún sistema.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="display" aria-hidden="true">Cal&nbsp;Soci<span style="color:var(--terracotta);">.</span></div>
+          <p>Taverna menorquina. Sant Antoni, Barcelona.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Visítanos</h4>
+          <p>C. de Viladomat, 27<br/>08015 Barcelona</p>
+          <p style="margin-top:10px;"><a href="https://maps.google.com/?q=Cal+Soci+Viladomat+27+Barcelona" target="_blank" rel="noopener">Abrir en mapas ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p><a href="tel:+34930298912">930 29 89 12</a></p>
+          <p><a href="https://www.instagram.com/cal.soci/" target="_blank" rel="noopener">@cal.soci ↗</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Horario</h4>
+          <p>Lun–Vie · 19–02:30<br/>Sáb · 12:30–03:00<br/>Dom · 12:30–17:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Cal Soci · Sant Antoni</span>
+        <span>De Ciutadella, amb amor.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <!-- Instagram embed widget — turns the @cal.soci blockquotes above into the real posts -->
+  <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
