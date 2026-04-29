@@ -8,7 +8,7 @@ A static, mobile-first site intended as a visual pitch for the owners.
 - **Address:** C. de Viladomat 27, 08015 Barcelona (Sant Antoni · Metro Poble Sec L3)
 - **Phone:** 930 29 89 12
 - **Instagram:** [@cal.soci](https://www.instagram.com/cal.soci/)
-- **Hours:** Tue–Thu 19:00–02:30 · Fri–Sat 19:00–03:00 · closed Sun & Mon
+- **Hours (per @cal.soci IG bio):** Mon–Fri 19:00–02:30 · Sat 12:30–03:00 · Sun 12:30–17:00
 
 ---
 
@@ -73,10 +73,16 @@ The site was rewritten using **real research** from public press coverage of Cal
 - **Price point** — "good feast for ~25 €" (per Time Out), reflected in the carta's overall range.
 - **Vermut on weekends only** — confirmed.
 
+### 📸 Real photography from @cal.soci
+
+The gallery section now renders **six real Instagram posts** from `@cal.soci` via Instagram's official embed widget. The photos are pulled live from Instagram's CDN — no copy/paste, no Unsplash, no stock. Posts curated for variety (founder portrait, signature dishes, atmosphere). When the owners post a new photo, the feed picture auto-updates.
+
+The four "highlight dishes" on the home (and all dish photos on the menu) still use Unsplash placeholders matched by category, because Instagram's embed is heavy and meant for a feed-style block — not for the editorial dish-card layout. Replace those with real photography.
+
 ### ⚠️ Placeholder (must validate with owners before live)
 
 - **Specific prices** in the carta. Press never publishes them. The numbers are realistic Sant Antoni 2024 ranges; treat as comps, not facts. Owner sends real prices and we drop them in.
-- **Photography** — Unsplash placeholders, picked to match the actual category (cod with sobrasada, cuttlefish meatballs, cheese boards, pomada). Each has a typographic fallback if the URL ever breaks.
+- **Highlight dish photos** on the home and all dish photos on the menu — still Unsplash placeholders. The Instagram embed in the gallery section uses real Cal Soci photos.
 - **Reservation form** — UI demo only. Submit shows an inline confirmation message. Hook to email, WhatsApp (`wa.me/34...`) or a booking provider when ready.
 - **A few small descriptive lines** for dishes (e.g. "crujientes por fuera, salsa brava de la casa") — written in keeping with the house voice but without a verbatim source.
 

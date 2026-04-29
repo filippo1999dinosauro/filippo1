@@ -394,6 +394,55 @@ p  { margin: 0; }
 .gallery__item:hover img { transform: scale(1.04); filter: saturate(1); }
 .gallery__item.tall { grid-row: span 2; aspect-ratio: auto; height: 100%; }
 
+/* ---------- Instagram feed ---------- */
+.ig-feed {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.ig-feed__head {
+  display: grid; grid-template-columns: 1fr; gap: 24px;
+  margin-bottom: 50px;
+}
+.ig-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+.ig-card {
+  background: var(--paper-soft);
+  min-height: 360px;
+  display: flex; align-items: stretch; justify-content: center;
+  position: relative;
+}
+.ig-card::before {
+  content: "Cargando @cal.soci…";
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  z-index: 0;
+}
+.ig-card .instagram-media {
+  position: relative; z-index: 1;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 1px rgba(31,26,20,.06), 0 8px 30px rgba(31,26,20,.08) !important;
+}
+
+@media (min-width: 680px) {
+  .ig-feed__head { grid-template-columns: 1fr 1fr; align-items: end; gap: 40px; }
+  .ig-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
+@media (min-width: 980px) {
+  .ig-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+}
+
 /* ---------- Reservation / Contact ---------- */
 .reserve__grid {
   display: grid; grid-template-columns: 1fr; gap: 40px;
