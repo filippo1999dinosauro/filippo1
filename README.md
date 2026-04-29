@@ -1,18 +1,20 @@
 # Cal Soci — Web concept
 
-Redesign proposal for **Cal Soci**, a neighborhood taberna in Sant Antoni, Barcelona.
-A static, mobile-first site intended as a visual pitch for the owner.
+Redesign proposal for **Cal Soci**, the Menorcan tavern in Sant Antoni, Barcelona.
+A static, mobile-first site intended as a visual pitch for the owners.
 
-- **Name:** Cal Soci
-- **Address:** C. de Viladomat 27, 08015 Barcelona
+- **Name:** Cal Soci · Taverna menorquina
+- **Owners:** Lucho (Luxo) and Miqui (Miquel) — both from Ciutadella, Menorca
+- **Address:** C. de Viladomat 27, 08015 Barcelona (Sant Antoni · Metro Poble Sec L3)
 - **Phone:** 930 29 89 12
-- **Neighborhood:** Sant Antoni
+- **Instagram:** [@cal.soci](https://www.instagram.com/cal.soci/)
+- **Hours:** Tue–Thu 19:00–02:30 · Fri–Sat 19:00–03:00 · closed Sun & Mon
 
 ---
 
 ## Run locally
 
-No build step. Three equally good options — pick whichever is most convenient:
+No build step. Three options:
 
 ```bash
 # Option 1 — Python (built-in on macOS/Linux)
@@ -25,74 +27,92 @@ npx serve .
 open index.html
 ```
 
-Then visit `http://localhost:8080`.
+For the best demo, **preview on a real phone**. Or use the public preview link below.
 
-Also works by double-clicking `index.html`. For the best demo feel, **preview on a real phone** — connect the phone to the same network and open the local IP.
+### Preview without local setup
+
+The site can be opened straight from the GitHub branch via raw.githack:
+
+- Home: https://raw.githack.com/filippo1999dinosauro/filippo1/claude/cal-soci-website-design-2AYJX/index.html
+- Carta: https://raw.githack.com/filippo1999dinosauro/filippo1/claude/cal-soci-website-design-2AYJX/menu.html
 
 ---
 
 ## Pages
 
-- `index.html` — Home (hero, identity, highlights, experience, gallery, contact/reservation)
-- `menu.html` — Menu (sticky category tabs, seven sections)
-- `assets/css/styles.css` — all styling
-- `assets/js/main.js` — nav scroll-state, mobile drawer, scroll-reveal, menu-tab scroll spy
+- `index.html` — Home (hero, identity, signature dishes, "la nit" experience moments, gallery, contact/reservation)
+- `menu.html` — Carta (sticky category tabs, seven sections of real Menorcan dishes)
+- `assets/css/styles.css` — full design system
+- `assets/js/main.js` — nav scroll-state, mobile drawer, scroll-reveal, menu tab scroll-spy
 
 ---
 
 ## Design direction
 
-- **Palette** — warm paper, cream, deep ink, terracotta accent, muted olive.
-  Taberna-inspired, not corporate, not luxury.
-- **Typography** — *Fraunces* (editorial serif) + *Inter* (clean sans), both from Google Fonts.
-- **Layout** — generous spacing, asymmetric grid, editorial headings, ruled dividers, tabular prices.
-- **Motion** — subtle only: nav shrink on scroll, fade-up reveals, hover image-pan. Respects `prefers-reduced-motion`.
-- **Mobile-first** — designed for a phone demo; tablet and desktop layouts expand from there.
+- **Palette** — warm paper, cream, deep ink, terracotta accent. Aligns with the "fishermen's pub of Ciutadella" aesthetic Cal Soci was inspired by — wood, candles, no chrome.
+- **Typography** — *Fraunces* (editorial serif) + *Inter* (clean sans), Google Fonts.
+- **Layout** — generous spacing, asymmetric grid, ruled dividers, tabular prices.
+- **Voice** — Spanish primary, with natural Catalan / Menorcan terms (*trinxat amb cuixot*, *mandonguilles amb sípia*, *pomada*, *La nit*) — exactly the way the owners speak.
+- **Motion** — subtle: nav shrink, fade-up reveals, hover image-pan. Honors `prefers-reduced-motion`.
+- **Mobile-first** — designed for a phone demo; tablet (≥ 680px) and desktop (≥ 980px) expand from there.
 
 ---
 
-## What came from real sources vs. what was inferred
+## What is real vs. what's still placeholder
 
-No assets were provided in the repository, so the content is structured around verified facts only and clearly marked placeholders elsewhere.
+The site was rewritten using **real research** from public press coverage of Cal Soci (Time Out Barcelona, Menorca Info, Local Love Barcelona, Sluurpy, Tripadvisor). Owners' Instagram is restricted from automated fetch, so the visual identity could not be pulled directly.
 
-**Directly sourced / verified**
-- Name, address, phone, neighborhood (as given in the brief).
+### ✅ Real (from public sources)
 
-**Inferred from tone & positioning (placeholder copy)**
-- Positioning lines, the "La casa" story, the four "Momentos" sections, and the hero tagline. Written in Spanish with light Catalan touches (natural for Sant Antoni); can be swapped for the owner's voice.
-- Menu items and prices in `menu.html` are a **coherent placeholder selection** — typical Barcelona taberna dishes with a couple of Menorcan accents (formatge de Maó, sobrassada, caldereta, mel i mató) to reflect the brief's Menorcan influence. Prices are realistic neighborhood ranges, **not real**. A visible "muestra orientativa" note is shown at the top of the menu page, and the fact is repeated in code comments.
-- Reservation form is a **UI demo** — it does not submit anywhere. Submitting shows a confirmation message only. Swap for a real endpoint (email, WhatsApp handoff, or a booking provider) when ready.
-- Instagram link points to the Instagram root (`https://www.instagram.com/`) because the exact handle was not provided — replace with the real `@calsoci` URL once confirmed.
-- Opening hours are **intentionally not listed** — the hero explicitly says "consulta horarios al teléfono" so no false hours are published.
-- Images are Unsplash placeholders chosen for vibe (warm interiors, wine, tapas, brasa). Each one has a graceful fallback to a typographic placeholder if the URL ever breaks.
+- **Identity & positioning** — "the (only) Menorcan tavern in Barcelona", "more than a club, more than a bar", "a parenthesis from the rush".
+- **Founders' story** — Lucho and Miqui from Ciutadella, opened ~2022 post-COVID, Miqui trained in 2-Michelin kitchens, Lucho came from El Balear.
+- **Concept** — fishermen's-pub of Ciutadella, late-night cooking, inclusive menu, mission to spread Menorcan cuisine.
+- **Hours** — Tue–Thu 19:00–02:30, Fri–Sat 19:00–03:00, closed Sun & Mon.
+- **Address, phone, metro stop, Instagram handle.**
+- **Signature dishes** named on the menu page — `bacallà amb sobrassada i mel`, `mandonguilles amb sípia`, `trinxat amb cuixot`, `pilotes amb tomàquet`, `costelles laquades`, `meloso de ternera`, `musclos amb mantega i sàlvia`, `formatges de Menorca`, `embotits de l'illa` (cuixot, sobrasada, camot), `tàperes silvestres`, `sobrassada amb bolets`, `arròs de cap de setmana`, `greixonera`, `licor de figues de moro`, `pomada`, `gin Xoriguer`. All confirmed from press.
+- **Price point** — "good feast for ~25 €" (per Time Out), reflected in the carta's overall range.
+- **Vermut on weekends only** — confirmed.
 
-**Nothing invented**
-- No awards, no fake history, no reviews, no chef names, no press quotes, no specific dates, no booking partner logos.
+### ⚠️ Placeholder (must validate with owners before live)
+
+- **Specific prices** in the carta. Press never publishes them. The numbers are realistic Sant Antoni 2024 ranges; treat as comps, not facts. Owner sends real prices and we drop them in.
+- **Photography** — Unsplash placeholders, picked to match the actual category (cod with sobrasada, cuttlefish meatballs, cheese boards, pomada). Each has a typographic fallback if the URL ever breaks.
+- **Reservation form** — UI demo only. Submit shows an inline confirmation message. Hook to email, WhatsApp (`wa.me/34...`) or a booking provider when ready.
+- **A few small descriptive lines** for dishes (e.g. "crujientes por fuera, salsa brava de la casa") — written in keeping with the house voice but without a verbatim source.
+
+### ❌ Nothing invented
+
+No fake awards, no fake reviews, no fake press quotes, no fake chef pedigree (the press already confirmed it), no fake opening date, no fake history.
 
 ---
 
-## What could be improved with real materials
+## What would still improve the site with more real materials
 
 In order of impact:
 
-1. **Photography.** The single biggest lift. Commission a half-day shoot (interior, brasa, bravas, vermut, staff hands, a full table). Replace all Unsplash URLs — they are marked by section. The layout is built to let good photography carry the site.
-2. **Real menu + current prices.** Drop in the real carta in `menu.html`; the section structure is already in place. Keep the "orientativo" note if the carta changes often.
-3. **Owner's voice.** Two or three short paragraphs from the owner about why Cal Soci exists — to replace the inferred "La casa" copy and the hero tagline.
-4. **Opening hours.** Once confirmed, add them to the contact block and the footer.
-5. **Instagram handle.** Replace the placeholder link.
-6. **Reservation flow.** Pick a destination for the form: an email address, a WhatsApp number (`wa.me`), or a booking provider (Cover Manager, TheFork, OpenTable). The form markup stays the same; only the submit handler changes.
-7. **Menorcan story.** If the owners have a specific Menorcan root worth telling, a short "Raíces menorquinas" block would tie together the dishes that already exist on the carta.
-8. **Logo / wordmark.** The site currently uses a typographic wordmark ("Cal Soci."). Swap in a real logo SVG in `.nav__brand` and the footer `.footer__brand` if one exists.
+1. **Real photography of Cal Soci.** A half-day shoot would replace every Unsplash placeholder. The brief, the design, and the press all describe the same thing — wood, low light, plates at the centre of a long table, late-night atmosphere, hands sharing pomada. Once those photos are in, the site goes from "very good demo" to "ready to publish."
+2. **The actual carta and prices.** The dish names are right. The prices are placeholders. Drop in the printed PDF and it's done.
+3. **A short paragraph from Lucho or Miqui in their own voice.** The "De Ciutadella a Sant Antoni" story is faithful to the press but second-hand. Two real quotes lift it.
+4. **Logo / wordmark.** The site uses a typographic Cal Soci wordmark with a terracotta dot. If a real logo exists (Diana Mateo Design appears to be the brand designer), swap it into `.nav__brand` and `.footer__brand`.
+5. **Reservation flow.** Pick the destination — email, WhatsApp number, or booking provider (Cover Manager, TheFork). Form markup stays; only the submit handler changes.
+6. **Real Instagram embed or feed.** Currently the site links to `@cal.soci`; an embedded feed grid on the home would make the gallery section come alive without a photo shoot.
 
 ---
 
 ## Tech notes
 
-- Pure HTML + CSS + one small JS file. No framework, no build, no npm install.
-- Google Fonts loaded over the CDN. Safe to self-host later.
-- Semantic HTML, skip-links not needed (simple one-page flow + one internal page).
-- Responsive at `680px` (tablet) and `980px` (desktop), plus a tuning breakpoint at `1200px`.
-- Tested structurally against mobile-first CSS Grid patterns. Degrades to no-JS (reveals show, drawer is not opened, tabs still link as anchors).
+- Pure HTML + CSS + one small JS file. No framework, no build, no `npm install`.
+- Google Fonts CDN, safe to self-host later.
+- Semantic HTML, `prefers-reduced-motion` respected, graceful image fallbacks.
+- Tested structurally against mobile-first CSS Grid patterns. Works without JS (reveals visible, drawer not interactive, tabs still link).
+
+## Sources used in research
+
+- Time Out Barcelona — *La única taberna menorquina de Barcelona está en Sant Antoni*
+- Menorca Info — *La taverna Cal Soci, el gust de Menorca a Barcelona de la mà de dos ciutadellencs*
+- Local Love Barcelona — Cal Soci entry
+- Time Out Barcelona — Cal Soci venue page
+- Tripadvisor / OpenTable / Sluurpy — review aggregates and rating
 
 ---
 
